@@ -160,7 +160,7 @@ We can see the services that are running, including the number of replicates of 
 
 $ docker service ls
 ID                  NAME                   MODE                REPLICAS            IMAGE                        PORTS
-3yy4pncrars5        ords-stack_db          replicated          1/1                 ol7_183:latest               *:1521->1521/tcp
+3yy4pncrars5        ords-stack_db          replicated          1/1                 ol7_19:latest                *:1521->1521/tcp
 0eo2a8pi91tg        ords-stack_ords        replicated          2/2                 ol7_ords:latest              *:8080->8080/tcp, *:8443->8443/tcp
 u7qnhf4l2tyd        ords-stack_portainer   replicated          1/1                 portainer/portainer:latest   *:9000->9000/tcp
 $
@@ -169,7 +169,7 @@ We can display information about the processes running in a stack using the dock
 $ docker stack ps ords-stack
 ID                  NAME                     IMAGE                        NODE                    DESIRED STATE       CURRENT STATE            ERROR               PORTS
 j4rpczp0k6ch        ords-stack_portainer.1   portainer/portainer:latest   localhost.localdomain   Running             Running 5 minutes ago
-jlrmo1g0yqta        ords-stack_db.1          ol7_183:latest               localhost.localdomain   Running             Running 17 seconds ago
+jlrmo1g0yqta        ords-stack_db.1          ol7_19:latest                localhost.localdomain   Running             Running 17 seconds ago
 rkvub2qez8ub        ords-stack_ords.1        ol7_ords:latest              localhost.localdomain   Running             Running 4 minutes ago
 43usasqwjn6s        ords-stack_ords.2        ol7_ords:latest              localhost.localdomain   Running             Running 4 minutes ago
 $
@@ -177,7 +177,7 @@ The docker ps command can still be used in the normal way of course.
 
 $ docker ps -a
 CONTAINER ID        IMAGE                        COMMAND                  CREATED             STATUS                   PORTS                NAMES
-fe92be4d84f8        ol7_183:latest               "/bin/sh -c 'exec ${…"   7 minutes ago       Up 6 minutes (healthy)   1521/tcp, 5500/tcp   ords-stack_db.1.jlrmo1g0yqtagbjbz3rn7gyff
+fe92be4d84f8        ol7_19:latest                "/bin/sh -c 'exec ${…"   7 minutes ago       Up 6 minutes (healthy)   1521/tcp, 5500/tcp   ords-stack_db.1.jlrmo1g0yqtagbjbz3rn7gyff
 6991979026f1        ol7_ords:latest              "/bin/sh -c 'exec ${…"   7 minutes ago       Up 7 minutes (healthy)   8080/tcp, 8443/tcp   ords-stack_ords.2.43usasqwjn6s9wl03y3uyzdvx
 ca3b6a58ebe2        ol7_ords:latest              "/bin/sh -c 'exec ${…"   7 minutes ago       Up 7 minutes (healthy)   8080/tcp, 8443/tcp   ords-stack_ords.1.rkvub2qez8ubtxewibuiab0ep
 $
@@ -202,7 +202,7 @@ $
 
 $ docker stack ps ords-stack
 ID                  NAME                     IMAGE                        NODE                    DESIRED STATE       CURRENT STATE                ERROR               PORTS
-jlrmo1g0yqta        ords-stack_db.1          ol7_183:latest               localhost.localdomain   Running             Running 9 minutes ago
+jlrmo1g0yqta        ords-stack_db.1          ol7_19:latest                localhost.localdomain   Running             Running 9 minutes ago
 rkvub2qez8ub        ords-stack_ords.1        ol7_ords:latest              localhost.localdomain   Running             Running 13 minutes ago
 43usasqwjn6s        ords-stack_ords.2        ol7_ords:latest              localhost.localdomain   Running             Running 13 minutes ago
 rnw0i26gudqn        ords-stack_ords.3        ol7_ords:latest              localhost.localdomain   Running             Running about a minute ago
@@ -222,7 +222,7 @@ $
 
 $ docker stack ps ords-stack
 ID                  NAME                     IMAGE                        NODE                    DESIRED STATE       CURRENT STATE            ERROR               PORTS
-jlrmo1g0yqta        ords-stack_db.1          ol7_183:latest               localhost.localdomain   Running             Running 11 minutes ago
+jlrmo1g0yqta        ords-stack_db.1          ol7_19:latest                localhost.localdomain   Running             Running 11 minutes ago
 rkvub2qez8ub        ords-stack_ords.1        ol7_ords:latest              localhost.localdomain   Running             Running 15 minutes ago
 43usasqwjn6s        ords-stack_ords.2        ol7_ords:latest              localhost.localdomain   Running             Running 15 minutes ago
 $
@@ -249,7 +249,7 @@ $
 
 $ docker stack ps ords-stack
 ID                  NAME                          IMAGE               NODE                    DESIRED STATE       CURRENT STATE           ERROR               PORTS
-jlrmo1g0yqta        3yy4pncrars5wk9bvucs1nf2l.1   ol7_183:latest      localhost.localdomain   Remove              Running 5 seconds ago
+jlrmo1g0yqta        3yy4pncrars5wk9bvucs1nf2l.1   ol7_19:latest       localhost.localdomain   Remove              Running 5 seconds ago
 $
 
 $ docker stack ps ords-stack
