@@ -14,6 +14,11 @@ https://www.oracle.com/database/technologies/appdev/rest-data-services-downloads
 https://www.oracle.com/tools/downloads/sqlcl-downloads.html
 https://adoptopenjdk.net/releases.html
 http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.tar.gz
+
+Or
+
+https://efcunha-my.sharepoint.com/:f:/g/personal/efcunha_edsoncunha_eti_br/EiuY0dAUVJJCn6mOoBy9TTABIMMrKyPfT8BE_JjnpJgtnA?e=adgfFT
+
 ```
 # Oracle Database 19 on Docker SWARM
 
