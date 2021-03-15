@@ -148,7 +148,7 @@ If you reference any compose-specific parameters, they will be ignored and a war
 
 We deploy a stack to the swarm using the docker stack deploy command, referencing the "docker-stack.yml" file using the "--compose-file" or "-c" flag.
 ```
-$ cd ~//Ol7_DB_19/swarm/ol7_19_ords
+$ cd ~/Ol7_DB_19/swarm/ol7_19_ords
 
 $ docker stack deploy --compose-file ./docker-stack.yml ords-stack
 Creating network ords-stack_ordsnet
